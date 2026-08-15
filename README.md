@@ -41,7 +41,7 @@ The script keeps finite `QUALITY == 0` cadences, normalizes `PDCSAP_FLUX`, and a
 |---|---:|
 | TESS sector | 42 |
 | Cadences in fitted window | 442 |
-| Transit support | ΔBIC ≥ 10 |
+| Transit support | **Supported — ΔBIC = 28.2 (lower-margin within this portfolio)** |
 | Midpoint correction | +0.032 h ± 3.35 min |
 | Model mid-transit depth | 491.5 ± 78.7 ppm |
 | Radius ratio Rp/Rs | 0.02037 |
@@ -80,6 +80,7 @@ The per-sector table is in [`figures/multisector_statistics.csv`](figures/multis
 ## Limitations
 
 - The orbit is assumed circular and the quadratic limb-darkening coefficients are fixed representative values; they are not atmosphere-grid interpolations.
+- This is a lower-margin supported result within this portfolio. Its support is more sensitive than the very large-ΔBIC cases to fixed analysis choices such as the outlier rule, fitting window, and limb-darkening coefficients.
 - The scaled semi-major axis is derived from the saved composite semi-major axis and stellar radius; their uncertainties are not propagated.
 - Midpoint freedom corrects accumulated ephemeris error but introduces a bounded timing search. ΔBIC, not a naïve one-parameter p-value, is used as the support gate.
 - PDCSAP processing, dilution, stellar variability, transit-timing variations, and long-timescale covariance can still bias the inferred geometry.
