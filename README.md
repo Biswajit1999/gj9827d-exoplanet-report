@@ -1,10 +1,20 @@
-# GJ 9827 d — Real TESS Transit Report
+# GJ 9827 d: A Dense Super-Earth at the Atmosphere Boundary
 
+<!-- TARGET-IDENTITY-START -->
+<p align="center">
+  <img src="assets/artist_concept.webp" alt="Artist's interpretation of GJ 9827 d near its host star" width="900">
+</p>
+
+<p align="center"><em>AI-generated artist's interpretation informed by the measured system properties; not a direct image.</em></p>
+
+**Super-Earth · atmosphere boundary · TESS photometry**
+
+A nearby planet near the transition between rocky worlds and volatile-rich sub-Neptunes, analyzed here with a timing-aware TESS transit pipeline.
+<!-- TARGET-IDENTITY-END -->
 <p align="center">
   <img src="figures/gj9827d_tess_transit.png" alt="Phase-folded real TESS transit light curve of GJ 9827 d" width="760">
 </p>
 
-One real public TESS SPOC light curve; one historical NASA Exoplanet Archive ephemeris; one timing-adjusted, limb-darkened transit fit.
 
 **[Open the full report](https://biswajit1999.github.io/gj9827d-exoplanet-report/)** — the live GitHub Pages version.
 
