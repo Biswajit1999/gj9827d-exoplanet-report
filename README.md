@@ -28,7 +28,7 @@ A nearby planet near the transition between rocky worlds and volatile-rich sub-N
 ## Data sources
 
 - **System parameters** — the saved `pscomppars` row from the [NASA Exoplanet Archive TAP service](https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cra%2Cdec%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandur%2Cpl_rade%2Cpl_bmasse%2Cpl_eqt%2Cpl_orbsmax%2Csy_dist%2Csy_tmag%2Cst_teff%2Cst_rad%2Cst_mass%2Cdisc_year%2Cdiscoverymethod%2Cdisc_refname%2Cdisc_pubdate%2Cdisc_facility+from+pscomppars+where+pl_name%3D%27GJ+9827+d%27&format=csv).
-- **Observed photometry** — unmodified MAST file `tess2021232031932-s0042-0000000301289516-0213-s_lc.fits`, TESS Sector 42, DOI [10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686). This is a real SPOC reduced light curve, not simulated data.
+- **Observed photometry** — three unmodified MAST SPOC 2-minute light curves from TESS Sectors 42, 70, and 92, DOI [10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686). These are real reduced light curves, not simulated data.
 - Exact URLs, IDs, retrieval date, and SHA-256 checksum are in [`data/SOURCE.md`](data/SOURCE.md).
 
 ## Reproduce the analysis
@@ -62,7 +62,7 @@ The timing-adjusted transit is strongly preferred by ΔBIC = 28.2. Its fitted mi
 <!-- MULTISECTOR-UPGRADE-START -->
 ## Multi-sector robustness and correlated noise
 
-The archive prediction was timing-adjusted independently in 1 fitted sector(s) (S42), of which 1 meet Delta BIC >= 10. Formal depth errors were inflated by sqrt(max(reduced chi-square, 1)) times the residual time-averaging beta factor (observed range 1.01-1.01). The robust inverse-variance model depth across supported sectors is 491.5 +/- 79.8 ppm; a sector-to-sector Q test requires at least two supported sectors. These scaled errors address underestimated scatter and short-timescale correlation, but they are not a full Gaussian-process or physical limb-darkened transit fit.
+The archive prediction was timing-adjusted independently in Sectors 42, 70, and 92; all three meet ΔBIC ≥ 10. Formal depth errors were inflated by sqrt(max(reduced χ², 1)) times the residual time-averaging beta factor (range 1.01–3.16). The robust inverse-variance model depth is 536.5 ± 69.4 ppm. Cochran's Q = 1.92 for 2 degrees of freedom (p = 0.384), so this diagnostic does not detect excess depth dispersion after the red-noise inflation. That absence of detected heterogeneity is not proof of a common physical depth: only three sectors are available, Sector 70 has strong time-correlated residuals, and this is not a Gaussian-process or global transit fit.
 
 <p align="center"><img src="figures/gj9827d_multisector_transits.png" alt="Independent sector transit fits for GJ 9827 d" width="760"></p>
 
@@ -87,7 +87,7 @@ The per-sector table is in [`figures/multisector_statistics.csv`](figures/multis
 ## Limitations
 
 - The orbit is assumed circular and the quadratic limb-darkening coefficients are fixed representative values; they are not atmosphere-grid interpolations.
-- This is a lower-margin supported result within this portfolio. Its support is more sensitive than the very large-ΔBIC cases to fixed analysis choices such as the outlier rule, fitting window, and limb-darkening coefficients.
+- Sector 42 is a lower-margin supported result (ΔBIC 28.2), while Sectors 70 and 92 are stronger under the same fixed protocol. Sector 70's beta = 3.16 flags substantial short-timescale residual correlation and correspondingly broadens its uncertainty.
 - The scaled semi-major axis is derived from the saved composite semi-major axis and stellar radius; their uncertainties are not propagated.
 - Midpoint freedom corrects accumulated ephemeris error but introduces a bounded timing search. ΔBIC, not a naïve one-parameter p-value, is used as the support gate.
 - PDCSAP processing, dilution, stellar variability, transit-timing variations, and long-timescale covariance can still bias the inferred geometry.
@@ -111,7 +111,7 @@ LICENSE                     MIT
 
 1. [Niraula et al. 2017](https://ui.adsabs.harvard.edu/abs/2017AJ....154..266N/abstract) — discovery reference as listed by the NASA Exoplanet Archive.
 2. Ricker, G. R. et al. (2015), *Transiting Exoplanet Survey Satellite (TESS)*, JATIS 1, 014003, [doi:10.1117/1.JATIS.1.1.014003](https://doi.org/10.1117/1.JATIS.1.1.014003).
-3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sector 42 used here.
+3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sectors 42, 70, and 92 used here.
 4. [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), `pscomppars` TAP row retrieved 2026-08-15.
 
 ## Author
