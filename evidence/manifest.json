@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "project": "GJ 9827 d: A Dense Super-Earth at the Atmosphere Boundary",
+  "repository": "https://github.com/Biswajit1999/gj9827d-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance",
+      "bytes": 2820,
+      "sha256": "c600704917773e0d8368fff2a06e1d772521e19ab52a5cff2c9327c1bd605b70",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "System parameters",
+      "path": "data/system_parameters.csv",
+      "role": "Data and provenance",
+      "bytes": 477,
+      "sha256": "406c2613af375e07f2ff646de792c7da9ddc7e0cb7ec1fc22216b5a10eff65b7",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 1,
+      "columns": 21,
+      "headers": [
+        "pl_name",
+        "hostname",
+        "ra",
+        "dec",
+        "pl_orbper",
+        "pl_tranmid",
+        "pl_trandur"
+      ],
+      "preview": [
+        [
+          "GJ 9827 d",
+          "GJ 9827",
+          "351.7717763",
+          "-1.2853435",
+          "6.20183",
+          "2460265.10196",
+          "1.2264"
+        ]
+      ]
+    },
+    {
+      "label": "Tess2021232031932 s0042 0000000301289516 0213 s lc",
+      "path": "data/tess2021232031932-s0042-0000000301289516-0213-s_lc.fits",
+      "role": "Data and provenance",
+      "bytes": 1863360,
+      "sha256": "9708ef48f7e7d41fe4c56fbe7c82c5b44d816fd64a1ea1d55e772981202597d6",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    },
+    {
+      "label": "Tess2023263165758 s0070 0000000301289516 0265 s lc",
+      "path": "data/tess2023263165758-s0070-0000000301289516-0265-s_lc.fits",
+      "role": "Data and provenance",
+      "bytes": 1863360,
+      "sha256": "fdb998982d3094d58400ffb7c26665bba38ae4c4078f5c5643905d42fc405fa0",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    },
+    {
+      "label": "Tess2025127075000 s0092 0000000301289516 0289 s lc",
+      "path": "data/tess2025127075000-s0092-0000000301289516-0289-s_lc.fits",
+      "role": "Data and provenance",
+      "bytes": 1949760,
+      "sha256": "9753d4e867c9311112ad962beb1934c186fe8e247e1689bd52557956ffc10efa",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 1189,
+      "sha256": "8689123ad0b74d7be5a9b49caea22694ee72435d6b9bbb552fdbe688eec424c7",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 36,
+      "columns": 3,
+      "headers": [
+        "quantity",
+        "value",
+        "unit"
+      ],
+      "preview": [
+        [
+          "sector",
+          "42",
+          "TESS sector"
+        ],
+        [
+          "period_days",
+          "6.20183",
+          "days; NASA Exoplanet Archive"
+        ],
+        [
+          "published_duration_hours",
+          "1.2264",
+          "hours; NASA Exoplanet Archive"
+        ],
+        [
+          "a_over_rstar",
+          "19.6494758621",
+          "fixed from saved a and stellar radius"
+        ]
+      ]
+    },
+    {
+      "label": "Multisector statistics",
+      "path": "figures/multisector_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 683,
+      "sha256": "82d731dd2665c210a408798839985a7f147a7d362e8fefc43b97587b142377da",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 3,
+      "columns": 13,
+      "headers": [
+        "sector",
+        "filename",
+        "transit_events",
+        "n_points",
+        "transit_supported",
+        "delta_bic",
+        "timing_shift_hours"
+      ],
+      "preview": [
+        [
+          "42",
+          "tess2021232031932-s0042-0000000301289516-0213-s_lc.fits",
+          "2",
+          "442",
+          "True",
+          "28.17653933",
+          "0.03189759957"
+        ],
+        [
+          "70",
+          "tess2023263165758-s0070-0000000301289516-0265-s_lc.fits",
+          "4",
+          "867",
+          "True",
+          "148.1863052",
+          "-0.0393894869"
+        ],
+        [
+          "92",
+          "tess2025127075000-s0092-0000000301289516-0289-s_lc.fits",
+          "4",
+          "761",
+          "True",
+          "75.36597994",
+          "-0.3065568489"
+        ]
+      ]
+    },
+    {
+      "label": "Gj9827d depth consistency",
+      "path": "figures/gj9827d_depth_consistency.png",
+      "role": "Figures",
+      "bytes": 60137,
+      "sha256": "c66105e85901f494ebbaa69a7a0203ab4485c070de6e553cc0fe609f5abf05e6",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Gj9827d multisector transits",
+      "path": "figures/gj9827d_multisector_transits.png",
+      "role": "Figures",
+      "bytes": 183117,
+      "sha256": "7fa0c14905142d5003166faee2979841f7f8603a63d4f51e2489c588aa30c099",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Gj9827d noise diagnostics",
+      "path": "figures/gj9827d_noise_diagnostics.png",
+      "role": "Figures",
+      "bytes": 154332,
+      "sha256": "4da81f4b305c576bcaec0161e053e2a416e7c1f4a53887f65cd45455d10fc771",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Gj9827d tess transit",
+      "path": "figures/gj9827d_tess_transit.png",
+      "role": "Figures",
+      "bytes": 132449,
+      "sha256": "c8634dbfc4fe88aed9535e9374cf8469fdeeb32bfdae696cd556b5ac02d69b74",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

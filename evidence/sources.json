@@ -1,0 +1,61 @@
+{
+  "project": "GJ 9827 d: A Dense Super-Earth at the Atmosphere Boundary",
+  "repository": "https://github.com/Biswajit1999/gj9827d-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "System parameters",
+      "path": "data/system_parameters.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2021232031932 s0042 0000000301289516 0213 s lc",
+      "path": "data/tess2021232031932-s0042-0000000301289516-0213-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2023263165758 s0070 0000000301289516 0265 s lc",
+      "path": "data/tess2023263165758-s0070-0000000301289516-0265-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2025127075000 s0092 0000000301289516 0289 s lc",
+      "path": "data/tess2025127075000-s0092-0000000301289516-0289-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Multisector statistics",
+      "path": "figures/multisector_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Gj9827d depth consistency",
+      "path": "figures/gj9827d_depth_consistency.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Gj9827d multisector transits",
+      "path": "figures/gj9827d_multisector_transits.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Gj9827d noise diagnostics",
+      "path": "figures/gj9827d_noise_diagnostics.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Gj9827d tess transit",
+      "path": "figures/gj9827d_tess_transit.png",
+      "role": "Figures"
+    }
+  ]
+}
