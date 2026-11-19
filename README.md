@@ -27,6 +27,13 @@ A nearby planet near the transition between rocky worlds and volatile-rich sub-N
 
 ## Research evidence and downloads
 
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 3 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Summary statistics](figures/summary_statistics.csv), [Multisector statistics](figures/multisector_statistics.csv), [Data source notes](data/SOURCE.md).
+- [View Gj9827d depth consistency](figures/gj9827d_depth_consistency.png).
+
+To rebuild the table profiles after rebuilding the evidence inventory, run `python scripts/profile_evidence_tables.py` followed by `python scripts/render_table_profiles.py`.
+
 [Open the evidence browser](https://biswajit1999.github.io/gj9827d-exoplanet-report/evidence.html) for 11 selected files, including [`summary_statistics.csv`](figures/summary_statistics.csv). Each file has a download link and SHA-256 digest.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
