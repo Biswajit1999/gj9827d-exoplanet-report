@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "project": "GJ 9827 d: A Dense Super-Earth at the Atmosphere Boundary",
+  "tables": [
+    {
+      "path": "data/system_parameters.csv",
+      "label": "System parameters",
+      "role": "Data and provenance",
+      "rows": 1,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "pl_name",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "hostname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "ra",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 351.7717763,
+          "maximum": 351.7717763
+        },
+        {
+          "name": "dec",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": -1.2853435,
+          "maximum": -1.2853435
+        },
+        {
+          "name": "pl_orbper",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 6.20183,
+          "maximum": 6.20183
+        },
+        {
+          "name": "pl_tranmid",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2460265.10196,
+          "maximum": 2460265.10196
+        },
+        {
+          "name": "pl_trandur",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.2264,
+          "maximum": 1.2264
+        },
+        {
+          "name": "pl_rade",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.98,
+          "maximum": 1.98
+        },
+        {
+          "name": "pl_bmasse",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 3.02,
+          "maximum": 3.02
+        },
+        {
+          "name": "pl_eqt",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 675.0,
+          "maximum": 675.0
+        },
+        {
+          "name": "pl_orbsmax",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.053,
+          "maximum": 0.053
+        },
+        {
+          "name": "sy_dist",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 29.661,
+          "maximum": 29.661
+        },
+        {
+          "name": "sy_tmag",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 9.0684,
+          "maximum": 9.0684
+        },
+        {
+          "name": "st_teff",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 4236.0,
+          "maximum": 4236.0
+        },
+        {
+          "name": "st_rad",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.58,
+          "maximum": 0.58
+        },
+        {
+          "name": "st_mass",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.62,
+          "maximum": 0.62
+        },
+        {
+          "name": "disc_year",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2017.0,
+          "maximum": 2017.0
+        },
+        {
+          "name": "discoverymethod",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_refname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_pubdate",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_facility",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/summary_statistics.csv",
+      "label": "Summary statistics",
+      "role": "Tables and numerical results",
+      "rows": 36,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 36,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 1,
+          "finite": 35,
+          "nonfinite": 0
+        },
+        {
+          "name": "unit",
+          "blank": 28,
+          "text": 8,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/multisector_statistics.csv",
+      "label": "Multisector statistics",
+      "role": "Tables and numerical results",
+      "rows": 3,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "sector",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 42.0,
+          "maximum": 92.0
+        },
+        {
+          "name": "filename",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "transit_events",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 2.0,
+          "maximum": 4.0
+        },
+        {
+          "name": "n_points",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 442.0,
+          "maximum": 867.0
+        },
+        {
+          "name": "transit_supported",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "delta_bic",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 28.17653933,
+          "maximum": 148.1863052
+        },
+        {
+          "name": "timing_shift_hours",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": -0.3065568489,
+          "maximum": 0.03189759957
+        },
+        {
+          "name": "depth_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 491.4927196,
+          "maximum": 857.0321526
+        },
+        {
+          "name": "formal_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 63.51520808,
+          "maximum": 72.66535707
+        },
+        {
+          "name": "scatter_scaled_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 78.6953075,
+          "maximum": 85.84158184
+        },
+        {
+          "name": "reduced_chi_square",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 1.172851019,
+          "maximum": 1.571847095
+        },
+        {
+          "name": "beta",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 1.013449019,
+          "maximum": 3.158112165
+        },
+        {
+          "name": "robust_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 79.75368216,
+          "maximum": 271.0973438
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
